@@ -19,16 +19,7 @@
 ##Install Video Guide:
 
     https://youtu.be/mQgittYwbnU
-
-Die Website ist unter folgender URL zu erreichen:
-
-    http://wallet21.22web.org
-    E-Mail: UserTest@example.com
-    Passwort: password
-    Alternative einen Neuen Account erstellen
-    
-    Backup:  http://w21.web1337.net/
-    
+   
 
 Damit der Ordner nicht zu groß ist sind Folgende Dateien mithilfe des Terminals zu installieren.
 Composer und NPM.
@@ -140,7 +131,7 @@ MFG. Stefan K.
     Wichtig host-file URL muss mit der APP_URL übereinstimmen 
     
 
-###Alle Accounts
+### Alle Accounts
     Jeder Account hat als Passwort "password" als standart Passwort!
     
     - Admin
