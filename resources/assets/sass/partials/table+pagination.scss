@@ -1,0 +1,232 @@
+table a {
+  color: $blue;
+}
+
+.table {
+  width: 100%;
+  border-radius: $borderRadius;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+  @media (min-width: 760px) {
+    box-shadow: $boxShadow;
+
+  }
+  thead {
+    background: $blue;
+  }
+  tbody {
+    background: $white;
+  }
+  th {
+    color: $white;
+    padding: 10px;
+  }
+  td {
+    word-break: break-word;
+    padding: 10px;
+  }
+}
+
+.booking-records {
+
+  tbody tr:nth-child(even) {
+    background-color: rgba(204, 204, 204, 0.20);
+  }
+  td::before {
+    color: $black;
+  }
+  td {
+    word-break: break-word;
+    padding: 10px;
+  }
+  .amount {
+    text-align: right;
+  }
+  .options {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 760px) {
+  table a {
+    margin-left: 50px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    box-shadow: $boxShadow;
+    border-radius: $borderRadius;
+    margin: 15px 0;
+  }
+
+  td, .booking-records .options {
+    border: none;
+    border-bottom: 1px solid #EEE;
+    position: relative;
+    //padding-left: 50%;
+    text-align: right;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: max-content;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .booking-records .date:before {
+    content: "Datum";
+  }
+
+  .booking-records .name:before {
+    content: "Name";
+  }
+
+  .booking-records .amount:before {
+    content: "Betrag";
+  }
+  .booking-records .options:before {
+    content: "Optionen";
+  }
+}
+
+//Data Table
+.data-table {
+  margin: 10px 0;
+}
+
+.data-table-action-bar {
+  display: grid;
+  grid-template-columns: 60px auto;
+  column-gap: 20px;
+  padding: 3px 0;
+  margin: 0 0 5px 0;
+  height: 32px;
+  .pagination-select-box {
+    select {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      border: 1px solid $gray;
+    }
+  }
+  .search-box {
+    justify-self: end;
+    position: relative;
+    display: flex;
+
+    .search-field {
+      padding: 6px 36px 6px 6px;
+      min-width: 150px;
+      max-width: 200px;
+      height: 32px;
+      border: 1px solid $gray;
+      border-right: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    button {
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      border: 1px solid $gray;
+
+      //position: absolute;
+      //top: 50%;
+      //right: 0;
+      //height: 30px;
+      //font-size: 20px;
+      //transform: translateY(-50%);
+    }
+  }
+}
+
+// Pagination
+
+.pagination{
+  display: grid;
+  grid-template-columns: auto max-content;
+  grid-column-gap: 20px;
+}
+@media (max-width: 680px) {
+  .pagination{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.pagination-button {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  button {
+    margin: 0 0 0 5px;
+    align-self: start;
+  }
+  li {
+    text-align: center;
+    align-self: center;
+    border: 1px solid #222;
+    margin: 2px;
+  }
+  .active {
+    background: blue;
+  }
+}
+
+button.next, button.back {
+  display: flex;
+  align-items: center;
+  i {
+    font-size: 20px;
+  }
+}
+
+button.back {
+  i {
+    margin-right: 10px;
+  }
+}
+
+button.next {
+  i {
+    margin-left: 10px;
+  }
+}
+
+.pagination-number-list{
+  display: grid;
+  padding: 5px;
+  margin: 10px auto;
+  list-style: none;
+  grid-gap: 5px;
+  grid-template-columns: repeat( auto-fit, minmax(30px,50px));
+  border-top: 1px solid $black;
+  li{
+    cursor: pointer;
+    background-color: $blue;
+    border-radius: $borderRadius;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    a{
+      display: block;
+    }
+  }
+  li.active{
+    background-color: $gray;
+  }
+}

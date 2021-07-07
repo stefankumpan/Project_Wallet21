@@ -1,0 +1,80 @@
+//Fade in Down
+@keyframes fadeInDown {
+  from {
+    transform: translate3d(0, -40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.fade-in-down-leave-to {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.fade-in-down-enter {
+  opacity: 0;
+  transform: translate3d(0, -40px, 0);
+}
+
+.fade-in-down-enter-to {
+  opacity: 0;
+  animation-duration: .7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+
+// Fade in Right
+
+@keyframes fadeInRight {
+  from {
+    transform: translate3d(40px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.fade-in-right-leave-to {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.fade-in-right-enter {
+  opacity: 0;
+  transform: translate3d(40px, 0, 0);
+}
+
+.fade-in-right-enter-to {
+  opacity: 0;
+  animation-duration: .7s;
+  animation-fill-mode: both;
+  animation-name: fadeInRight;
+}
+
+//Testing
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

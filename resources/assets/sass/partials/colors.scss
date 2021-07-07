@@ -1,0 +1,64 @@
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+.yellow {
+  color: $yellow;
+}
+
+.gray {
+  color: $gray;
+}.black {
+  color: $black;
+}
+.white{
+  color: $white;
+}
+.bg-black, .bg-blue, .bg-red, .bg-green, .bg-orange, .bg-pink {
+  color: $white;
+}
+
+.bg-white {
+  color: $black;
+  background-color: $white;
+  border-bottom: $borderStyle;
+
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+.bg-pink {
+  background-color: $pink;
+}

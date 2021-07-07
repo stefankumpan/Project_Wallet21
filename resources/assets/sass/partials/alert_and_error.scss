@@ -1,0 +1,48 @@
+.alert-box{
+  text-align: center;
+  & span{
+    display: block;
+    margin-bottom:5px;
+    border-radius: 50px;
+    color: $white;
+    background-color: $red;
+    padding: 5px;
+    font-weight: 700;
+    border: 1px solid red;
+  }
+}
+.error-msg{
+  color: $red;
+  display: block;
+}
+
+.info-msg-box {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  z-index: 10;
+  width: 100vw;
+  display: grid;
+  row-gap: 3px;
+  .notification{
+    background-color: $noticGreen;
+    color: $black;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: $borderRadius;
+    display: grid;
+    grid-template-columns: calc(100% - 20px) 20px;
+  }
+  .close{
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+}
+@media (min-width: 540px) {
+  .info-msg-box {
+    width: 300px;
+    right: 10px;
+
+  }
+}

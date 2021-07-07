@@ -1,0 +1,22 @@
+.progressbar {
+  height: 24px;
+  background: #e6e6e6;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  .progressbar-bar {
+    height: 100%;
+    transition: transform 2s ease;
+  }
+  span{
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    transform: translate(-50%);
+  }
+}
+
+

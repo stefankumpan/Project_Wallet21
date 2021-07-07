@@ -1,0 +1,25 @@
+.cookie-info{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $black;
+  color: white;
+  text-align: center;
+  .cookie-box{
+    padding: 20px;
+
+  }
+  a{
+    font-weight: 700;
+    text-decoration: underline;
+  }
+ .cookie-btn{
+   display: flex;
+   button{
+     width: 250px;
+   }
+   justify-content: center;
+ }
+}

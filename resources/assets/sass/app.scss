@@ -1,0 +1,31 @@
+@import "variables";
+@import "font_and_icon/icons.css";
+@import "partials/General/basic";
+@import "partials/General/helpers";
+@import "partials/General/picker";
+@import "partials/General/guest";
+@import "partials/General/gift-box";
+
+@import "partials/header-footer";
+@import "partials/wrapper";
+@import "partials/layouts";
+@import "partials/modal";
+@import "partials/card";
+@import "partials/colors";
+@import "partials/button_Links";
+@import "partials/spinner";
+@import "partials/alert_and_error";
+@import "partials/progressbar";
+@import "partials/table+pagination";
+@import "partials/form";
+@import "partials/transitions";
+@import "partials/General/cookie";
+@import "partials/General/price";
+
+@import "partials/User/passbooks";
+@import "partials/User/overview";
+@import "partials/User/action-nav";
+@import "partials/User/booking-record";
+
+@import "partials/Admin/admin-layout";
+

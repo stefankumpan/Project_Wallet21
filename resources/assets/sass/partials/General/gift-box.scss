@@ -1,0 +1,29 @@
+.gift-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  background: $white;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  padding: 20px;
+  h3{
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  p{
+    margin: 5px 0;
+    text-align: center;
+  }
+  span{
+    display: block;
+  }
+  img{
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+}

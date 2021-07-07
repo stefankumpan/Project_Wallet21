@@ -1,0 +1,128 @@
+// Home
+.home {
+  line-height: 2;
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+}
+
+.hero-banner {
+  background: $blue;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  line-height: 2;
+  .hero-content {
+    padding: 30px 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-text {
+    margin: 0;
+    max-width: 610px;
+    color: $white;
+    font-size: 18px;
+    text-align: center;
+  }
+  .action {
+    margin: 20px 0 0 0;
+    .btn {
+      box-shadow: $boxShadow;
+    }
+    &:hover {
+      box-shadow: $boxShadowHover;
+    }
+  }
+}
+
+@media (min-width: 680px) {
+  .hero-banner {
+    .hero-text {
+      margin: 0;
+      max-width: 610px;
+      color: $white;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+  line-height: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  h2 {
+    margin: 50px 0 0 0;
+  }
+  h3 {
+    margin: 25px 0 0;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.devices-title {
+  text-align: center;
+  margin: 50px 0 10px 0;
+}
+
+.devices-image {
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+.info-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  .info {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+  }
+  h3 {
+    margin: 50px 0 0;
+  }
+  p {
+    margin: 0;
+    max-width: 60ch;
+  }
+}
+
+@media (max-width: 540px) {
+  .m-column-reverse {
+  display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 680px) {
+  .info-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin: 50px auto;
+    h3 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      max-width: 60ch;
+    }
+
+    .image {
+      width: 300px;
+      height: auto;
+      justify-self: center;
+    }
+  }
+}

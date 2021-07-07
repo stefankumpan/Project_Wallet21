@@ -1,0 +1,87 @@
+.overlay {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.modal, .modal-lg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 1);
+  z-index: 2000;
+  .modal-header {
+    position: relative;
+    h3 {
+      padding: 0;
+      margin: 0 0 20px 0;
+      border-bottom: 1px solid $black;
+      word-break: break-all;
+    }
+    button {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: transparent;
+      border: none;
+      justify-self: center;
+      align-self: center;
+      cursor: pointer;
+      font-size: 30px;
+    }
+  }
+  .modal-body {
+    h3, h4 {
+      margin: 10px 0 5px 0;
+    }
+  }
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.modal-content, .modal-content-lg {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  height: 90vh; // bug fix Smartphones Navbar
+  overflow: auto;
+}
+
+.modal-content {
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.modal-content-lg {
+  min-width: 300px;
+  max-width: 700px;
+}
+
+@media (min-width: 540px) {
+  .modal, .modal-lg {
+    height: 100vh;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal-header {
+      button {
+        top: -20px;
+        right: -20px;
+      }
+    }
+  }
+  .modal-content, .modal-content-lg {;
+    padding: 30px;
+    border: $borderStyle;
+    box-shadow: $boxShadow;
+    height: auto;
+
+  }
+}

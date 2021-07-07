@@ -1,0 +1,103 @@
+// Button and Links
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  color: $black;
+  background-color: $transparent;
+  border: 1px solid $transparent;
+  border-radius: $borderRadius;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  font-size: 16px;
+  &:hover {
+    box-shadow: $boxShadow;
+    color: $black;
+    border-color: $transparent;
+  }
+}
+button.btn-icon{
+  display: flex;
+  align-items: center;
+
+  i{
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}
+
+.btn-icon{
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+  *{
+    align-self: center;
+  }
+}
+.link-size{
+  font-size: 16px;
+}
+@media (min-width: 680px) {
+  .btn-icon{
+    font-size: 16px;
+  }
+}
+
+.btn-full {
+  display: block;
+  width: 100%;
+}
+
+.btn-white {
+  color: $black;
+  background-color: $white;
+  border-color: $gray;
+  &:hover {
+    color: $blue;
+    border-color: $gray;
+  }
+}
+
+.btn-primary {
+  color: $white;
+  background-color: $blue;
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-success {
+  color: $white;
+  background-color: $green;
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-warning {
+  color: $white;
+  background-color: $orange;
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-danger {
+  color: $white;
+  background-color: $red;
+  &:hover {
+    color: $white;
+  }
+}
+
+button:disabled,
+button[disabled] {
+  opacity: .5;
+  cursor: not-allowed;
+  &:hover {
+    box-shadow: 0 0 0 0;
+  }
+}
+

@@ -1,0 +1,115 @@
+input{
+  border-radius: 0;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.split-2{
+  display: grid;
+  grid-template-columns: repeat(2,calc(50% - 5px)) ;
+  column-gap: 10px;
+}
+.secret_input{
+  display: grid;
+  grid-template-columns: calc(80% - 5px) calc(20% - 5px) ;
+  column-gap: 10px;
+}
+input:focus{
+  outline: none;
+  border-color: $blue;
+}
+input[type="number"]{
+  text-align: right;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  color: $black;
+  border: 0;
+  border-bottom: 1px solid #495057;
+}
+textarea{
+  display: block;
+  width: 100%;
+  height: 5rem;
+  padding: 10px;
+  border: 1px solid $black;
+  font-size: 16px;
+}
+.form-control-select{
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  color: $black;
+  border: 1px solid #495057;
+  text-align: center;
+}
+.file-upload{
+  display: none;
+}
+
+//Checkbox
+.toggle-switch {
+  display: flex;
+  align-items: center;
+
+  &__input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+
+    &:checked + .toggle-switch__slider {
+      background-color: #4a9dff;
+
+      &::before {
+        transform: translate(16px, -50%);
+      }
+    }
+
+    &:disabled + .toggle-switch__slider {
+      opacity: 0.5;
+      cursor: not-allowed;
+
+      &::before {
+        background-color: rgba(32, 37, 50, 0.14);
+      }
+    }
+  }
+
+  &__slider {
+    box-sizing: border-box;
+    margin: 0 9px;
+    width: 36px;
+    height: 22px;
+    border-radius: 30px;
+    background-color: rgba(32, 37, 50, 0.14);
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      transition: transform 75ms ease-in-out;
+      content: '';
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25), 0 2px 8px 0 rgba(32, 37, 50, 0.16);
+      position: absolute;
+      border-radius: 100%;
+      top: 11px;
+      transform: translate(2px, -50%);
+    }
+  }
+}

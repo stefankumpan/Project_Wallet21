@@ -1,0 +1,46 @@
+.booking-records-overview{
+  a{
+    color: $blue;
+  }
+}
+@media (min-width: 540px) {
+  .booking-records-overview{
+    display: grid;
+    grid-template-columns: 70% calc(30% - 20px);
+    grid-column-gap: 20px;
+    a{
+      color: $blue;
+    }
+  }
+}
+.booking-records-info{
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.booking-records-image-box img{
+  cursor: pointer;
+}
+
+.booking-records-image-full{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+  width: auto;
+  left: 50%;
+  top: 50%;
+  border: 1px solid $black;
+  box-shadow: $boxShadow;
+}
+.booking-records-stats{
+  li{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-gap: 10px;
+  }
+  li:last-child{
+    display: block;
+  }
+}
